@@ -1,7 +1,7 @@
-package service;
+package org.service;
 
-import model.Customer;
-import repository.CustomerRepositoryDB;
+import org.model.Customer;
+import org.repository.CustomerRepositoryDB;
 
 import java.util.List;
 import java.util.stream.Collectors;

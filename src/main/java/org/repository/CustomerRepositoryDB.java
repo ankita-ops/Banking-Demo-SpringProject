@@ -1,5 +1,5 @@
-package repository;
-import model.Customer;
+package org.repository;
+import org.model.Customer;
 import java.sql.DriverManager;
 
 

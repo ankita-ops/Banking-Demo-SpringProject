@@ -1,4 +1,4 @@
-package model;
+package org.model;
 
 public class Customer {
     private String id;

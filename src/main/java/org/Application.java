@@ -1,6 +1,6 @@
-package app;
-import model.Customer;
-import service.DefaultCustomerService;
+package org;
+import org.model.Customer;
+import org.service.DefaultCustomerService;
 
 import java.util.List;
 
