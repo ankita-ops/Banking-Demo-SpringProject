@@ -1,5 +1,5 @@
-package org.repository;
-import org.model.Customer;
+package org.example.repository;
+import org.example.model.Customer;
 import java.sql.DriverManager;
 
 
@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.ArrayList;
 
 
-public class CustomerRepositoryDB {
+public class CustomerRepositoryDB implements CustomerRepository {
     public List<Customer> findAll() {
         List<Customer> customers = new ArrayList<>();
         try {

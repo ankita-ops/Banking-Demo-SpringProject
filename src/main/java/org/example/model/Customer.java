@@ -1,4 +1,4 @@
-package org.model;
+package org.example.model;
 
 public class Customer {
     private String id;
@@ -33,5 +33,14 @@ public Customer(String id,String name,String city)
 
     public void setCity(String city) {
         this.city = city;
+    }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", city='" + city + '\'' +
+                '}';
     }
 }
