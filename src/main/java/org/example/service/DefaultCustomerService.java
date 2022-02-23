@@ -17,7 +17,7 @@ public class DefaultCustomerService implements CustomerService {
         //this.repository = repository;}
 
 
-    public void setCustomerRepository(CustomerRepository repository) {
+    public void setRepository(CustomerRepository repository) {
         this.repository = repository;
     }
 
