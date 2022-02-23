@@ -7,9 +7,9 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
-
+@Service("customerService")
 public class DefaultCustomerService implements CustomerService {
-
+@Autowired
     private CustomerRepository repository;
 
     // injecting the repository using the constructor
