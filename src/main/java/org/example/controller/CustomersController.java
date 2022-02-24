@@ -26,7 +26,8 @@ public class CustomersController {
     @RequestMapping("{id}")
     public Customer getCustomer(@PathVariable Long id)
  {
-     System.out.println("Customer ID received" +id);
-     return new Customer();
+     return customerService.getCustomerByID(id);
+     //System.out.println("Customer ID received" +id);
+     //return new Customer();
  }
 }

@@ -30,7 +30,6 @@ public class DefaultCustomerService implements CustomerService {
     @Override
     public Customer getCustomerByID(Long id) {
         Optional<Customer> customerbyId = repository.findById(id);
-// if(customerbyId.isPresent())
         return customerbyId.get();
 
     }

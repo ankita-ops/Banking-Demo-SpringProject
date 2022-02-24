@@ -64,12 +64,16 @@ public Customer(){}
         this.city = city;
     }
 
+
     @Override
     public String toString() {
         return "Customer{" +
-                "id='" + id + '\'' +
+                "id=" + id +
                 ", name='" + name + '\'' +
                 ", city='" + city + '\'' +
+                ", date_of_birth=" + date_of_birth +
+                ", zipcode='" + zipcode + '\'' +
+                ", status=" + status +
                 '}';
     }
 }
