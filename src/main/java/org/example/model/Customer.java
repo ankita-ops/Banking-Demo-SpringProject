@@ -1,6 +1,7 @@
 package org.example.model;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity(name ="customers")
 public class Customer {
@@ -10,6 +11,9 @@ public class Customer {
     private Long id;
     private String name;
     private String city;
+    private Date date_of_birth;
+    private String zipcode;
+    private int status;
 public Customer(){}
 
     public Long getId() {
@@ -30,6 +34,30 @@ public Customer(){}
 
     public String getCity() {
         return city;
+    }
+
+    public Date getDate_of_birth() {
+        return date_of_birth;
+    }
+
+    public void setDate_of_birth(Date date_of_birth) {
+        this.date_of_birth = date_of_birth;
+    }
+
+    public String getZipcode() {
+        return zipcode;
+    }
+
+    public void setZipcode(String zipcode) {
+        this.zipcode = zipcode;
+    }
+
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
     }
 
     public void setCity(String city) {
