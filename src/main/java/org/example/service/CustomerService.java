@@ -6,6 +6,7 @@ import java.util.List;
     public interface CustomerService {
 
         public List<Customer> getAllCustomers();
+        public Customer getCustomerByID(Long id);
 
     }
 

@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 @Service("customerService")
 public class DefaultCustomerService implements CustomerService {
@@ -22,10 +23,17 @@ public class DefaultCustomerService implements CustomerService {
     }
 
     public List<Customer> getAllCustomers() {
+
         return repository.findAll();
     }
 
+    @Override
+    public Customer getCustomerByID(Long id) {
+        Optional<Customer> customerbyId = repository.findById(id);
+// if(customerbyId.isPresent())
+        return customerbyId.get();
 
+    }
 
 }
 
